@@ -38,8 +38,11 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Registered Controllers
+const homeController = require('./routes/homeController.js');
+app.use('/', homeController);
+
 const moviesController = require('./routes/moviesController');
-app.use('/', moviesController);
+app.use('/movies', moviesController);
 
 const usersController = require('./routes/usersController');
 app.use('/users', usersController);

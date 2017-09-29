@@ -4,13 +4,8 @@ var router = express.Router();
 const Schema = require('../db/schema.js');
 const MovieModel = Schema.MovieModel;
 
-/* GET home page. */
-router.get('/', (req, res) => {
-  res.render('home')
-})
-
 // Get Movies Index page
-router.get('/movies', (req, res) => {
+router.get('/', (req, res) => {
   MovieModel.find({})
     .then((movies) => {
       res.render('movies/index', {
