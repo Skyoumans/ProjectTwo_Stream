@@ -1,0 +1,25 @@
+<div>
+    <h2>Movies</h2>
+    {{#each movies}}
+    <div class="row">
+        <div class="col s12 m7">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{{this.poster}}">
+                    <a href="#" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                </div>
+                <div>
+                    <span class="card-title"><strong>{{this.title}}</strong></span>
+                </div>
+                <div class="card-content">
+                    <p>Rental Price: ${{this.rentalPrice}}</p>
+                </div>
+                <div class="card-action">
+                    <a href="movies/{{this._id}}">View more Info</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+
