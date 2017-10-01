@@ -1,0 +1,13 @@
+<div>
+    <h1>User Profiles</h1>
+    <div>
+        <a href="/users/new">Add a new User</a>
+    </div>
+    {{#each users}}
+        <div class="card">
+            <p><img src="{{this.image}}"</p>
+            <p>User Name: {{this.username}}</p>
+            <p>Stream Status: {{this.status}}</p>
+        </div>
+    {{/each}}
+</div>
