@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
       })
     })
     .catch((error) => {
-      console.log(error)
+      res.render('error')
     })
 })
 
@@ -22,10 +22,24 @@ router.get('/new', (req, res) => {
   res.render('users/newUser')
 })
 
+// Create Route
+
+
 //Show Route
-
-
-
+router.get('/:userId', (req, res) => {
+  const userId = req.params.userId
+  UserModel.findById(userId)
+    .then((user) => {
+      res.render('users/show', {
+        user: user
+      })
+    })
+    .catch((error) => {
+      res.render('error')
+    })
+})
 
 // Edit Route
+
+
 module.exports = router;

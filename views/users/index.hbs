@@ -1,13 +1,24 @@
 <div>
     <h1>User Profiles</h1>
-    <div>
-        <a href="/users/new">Add a new User</a>
-    </div>
+        <a href="/users/new"><button class="btn right waves-effect waves-light red" type="text" name="action">Add A New User
+            <i class="material-icons left">add</i>
+        </button></a>
     {{#each users}}
-        <div class="card">
-            <p><img src="{{this.image}}"</p>
-            <p>User Name: {{this.username}}</p>
-            <p>Stream Status: {{this.status}}</p>
+    <div class="row">
+        <div class='col s12 m5'>
+            <div class="card">
+                <div class="card-image">
+                    <img src="{{this.image}}">
+                    <span class="card-title">{{this.username}}</span>
+                </div>
+                <div class="card-content">
+                    <p>Stream Status: {{this.status}}</p>
+                </div>
+                <div class="card-action">
+                    <a href="/users/{{this._id}}">View User Info</a>
+                </div>
+            </div>
         </div>
-    {{/each}}
-</div>
+    </div> 
+</div>       
+{{/each}}
