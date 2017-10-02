@@ -49,7 +49,7 @@ router.get('/:userId/edit', (req, res) => {
 })
 
 // Update Route
-router.put(':userId', (req, res) => {
+router.put('/:userId', (req, res) => {
   const userId = req.params.userId
   const updatedId = req.body
   UserModel.findByIdAndUpdate(userId, updatedId, { new: true })

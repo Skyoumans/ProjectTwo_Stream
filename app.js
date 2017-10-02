@@ -7,7 +7,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
-const methodOverride = require('method-override')
+const methodOverride = require('method-override');
 
 // Database set up
 mongoose.Promise = global.Promise
@@ -46,6 +46,12 @@ app.use('/movies', moviesController);
 
 const usersController = require('./routes/usersController');
 app.use('/users', usersController);
+
+const reviewsController = require('./routes/reviewsController')
+app.use('/movies/:movieId/reviews', reviewsController)
+
+const wishlistController = require("./routes/wishlistController")
+app.use('/users/:userId/wishlists', wishlistController)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

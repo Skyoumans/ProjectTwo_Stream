@@ -1,6 +1,6 @@
 <div>
     <h1>Edit {{user.username}}</h1>
-    <form class="col s12" action="/users/{{user._id}}?_method=PUT" method="POST">
+    <form class="col s12 m7" action="/users/{{user.id}}?_method=PUT" method="POST">
         <div class="row">
             <div class="input-field col s6">
                 <input name="name" placeholder="Name"  id="name" type="text" class="validate" value="{{user.name}}">

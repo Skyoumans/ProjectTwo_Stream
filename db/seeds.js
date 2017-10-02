@@ -19,6 +19,7 @@ var Schema = require("./schema.js");
 
 const MovieModel = Schema.MovieModel;
 const UserModel = Schema.UserModel;
+const WishlistModel = Schema.WishlistModel;
 
 //Delete all models from the database
 
@@ -41,10 +42,15 @@ const skylar = new UserModel({ name: `Skylar`, username: 'Skyoumans93', password
 const jason = new UserModel({ name: `Jason`, username: 'Jason099', password: 'HiWireIT', favoriteMovie: 'Sliding Doors', bio: `I'm just me, an entrepreneur living in Atlanta, Georgia. I love movies, computers, and enjoying the company of friends.`, status: 'VIP', image: 'https://i.imgur.com/ERpczVVt.jpg'})
 const kevin = new UserModel({ name: `Kevin`, username: 'MovieMedic1', password: 'ZeldaIsLife', favoriteMovie: 'The Goonies', bio: `I'm a easy going guy who loves movies and moved to Atlanta from Orlando. I work in a movie theater, so my love of movies is justified.`, status: 'VIP', image: 'https://i.imgur.com/D5MlzoQt.jpg?1'})
 
+const testlist = new WishlistModel({ title: "Spiderman: Homecoming", image: "https://i.imgur.com/loZIxbq.jpg"})
+
 const users = [skylar, jason, kevin]
 const movies = [goonies, theDarkKnight, moana]
+const wishlists =[testlist]
+
 
 users.forEach((user) => {
+    user.wishlist = wishlists
     user.save()
         .then((user) => {
             console.log(`${user.name} saved!`)

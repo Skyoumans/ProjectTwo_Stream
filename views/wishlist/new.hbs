@@ -1,0 +1,18 @@
+<div>
+    <h1>Add to Wishlist</h1>
+    <form class="col s12" action="/users/{{userId}}/wishlists/{{wishlistId}}" method="POST">
+        <div class="row">
+            <div class="input-field col s6">
+                <input name="title" placeholder="Movie Title"  id="title" type="text" class="validate">
+                <label for="title"></label>
+            </div>
+            <div class="input-field col s6">
+                <input name="image" placeholder="Image URL"  id="image" type="text" class="validate">
+                <label for="title"></label>
+            </div>
+            <button class="btn right waves-effect waves-light red" type="submit">Submit
+                <i class="material-icons right">send</i>
+            </button>
+        </div>
+    </form>
+</div>
