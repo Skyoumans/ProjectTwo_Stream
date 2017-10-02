@@ -40,25 +40,8 @@ router.post('/', (req, res) => {
         })
 })
 
-// Show Wishlist Route
-router.get('/:wishlistId', (req, res) => {
-    const userId = req.params.userId
-    const wishlistId = req.params.wishlistId
-    UserModel.findById(userId)
-    .then((user) => {
-        const wishlist = user.wishlist.id(wishlistId)
-        console.log(wishlist)
-        res.render('wishlist/show', {
-            user: user,
-            wishlist: wishlist
-        })
-    })
-    .catch((error) => {
-        res.render('error')
-    })
-})
 
 // Delete Wishlist Route
-
+router.get('/:wishlistId/delete',(req,res))
 
 module.exports = router
