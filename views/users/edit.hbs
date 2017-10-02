@@ -1,0 +1,38 @@
+<div>
+    <h1>Edit {{user.username}}</h1>
+    <form class="col s12" action="/users/{{user._id}}?_method=PUT" method="POST">
+        <div class="row">
+            <div class="input-field col s6">
+                <input name="name" placeholder="Name"  id="name" type="text" class="validate" value="{{user.name}}">
+                <label for="name"></label>
+            </div>
+            <div class="input-field col s6">
+                <input name="username" placeholder="Username"  id="username" type="text" class="validate" value="{{user.username}}">
+                <label for="username"></label>
+            </div>
+            <div class="input-field col s6">
+                <input name="password" placeholder="Password"  id="password" type="password" class="validate" value="{{user.password}}">
+                <label for="password"></label>
+            </div>
+            <div class="input-field col s6">
+                <input name="favoriteMovie" placeholder="Favorite Movie"  id="favoriteMovie" type="text" class="validate" value="{{user.favoriteMovie}}">
+                <label for="favoriteMovie"></label>
+            </div>
+            <div class="input-field col s6">
+                <input name="status" placeholder="Stream Status"  id="status" type="text" class="validate" value="{{user.status}}">
+                <label for="status"></label>
+            </div>
+            <div class="input-field col s6">
+                <input name="image" placeholder="Profile Picture"  id="image" type="text" class="validate" value="{{user.image}}">
+                <label for="image"></label>
+            </div>
+            <div class="input-field col s6">
+                <input name="bio" placeholder="Tell Us About Yourself"  id="bio" type="text" class="validate" value="{{user.bio}}">
+                <label for="bio"></label>
+            </div>
+            <button class="btn right waves-effect waves-light red darken-4" type="submit">Update
+                <i class="material-icons right">send</i>
+            </button>
+        </div>
+    </form>
+</div>

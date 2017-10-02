@@ -1,36 +1,36 @@
 <div>
     <h1>New User</h1>
-    <form class="col s12">
+    <form class="col s12" action="/users" method="POST">
         <div class="row">
             <div class="input-field col s6">
-                <input placeholder="Name"  id="name" type="text" class="validate">
+                <input name="name"placeholder="Name"  id="name" type="text" class="validate">
                 <label for="name"></label>
             </div>
             <div class="input-field col s6">
-                <input placeholder="User Name"  id="username" type="text" class="validate">
+                <input name="username" placeholder="User Name"  id="username" type="text" class="validate">
                 <label for="username"></label>
             </div>
             <div class="input-field col s6">
-                <input placeholder="Password"  id="password" type="text" class="validate">
+                <input name="password" placeholder="Password"  id="password" type="password" class="validate">
                 <label for="password"></label>
             </div>
             <div class="input-field col s6">
-                <input placeholder="Favorite Movie"  id="favoriteMovie" type="text" class="validate">
+                <input name="favoriteMovie" placeholder="Favorite Movie"  id="favoriteMovie" type="text" class="validate">
                 <label for="favoriteMovie"></label>
             </div>
             <div class="input-field col s6">
-                <input placeholder="Stream Status"  id="status" type="text" class="validate">
+                <input name="status" placeholder="Stream Status"  id="status" type="text" class="validate">
                 <label for="status"></label>
             </div>
             <div class="input-field col s6">
-                <input placeholder="Profile Picture"  id="image" type="text" class="validate">
+                <input name="image" placeholder="Profile Picture"  id="image" type="text" class="validate">
                 <label for="image"></label>
             </div>
             <div class="input-field col s6">
-                <input placeholder="Tell Us About Yourself"  id="bio" type="text" class="validate">
+                <input name="bio" placeholder="Tell Us About Yourself"  id="bio" type="text" class="validate">
                 <label for="bio"></label>
             </div>
-            <button class="btn right waves-effect waves-light red" type="submit" name="action">Submit
+            <button class="btn right waves-effect waves-light red" type="submit">Submit
                 <i class="material-icons right">send</i>
             </button>
         </div>
