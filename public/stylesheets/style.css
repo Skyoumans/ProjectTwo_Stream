@@ -6,6 +6,17 @@ body {
 a {
   color: #00B7FF;
 }
-.card {
-  width: 400px;
+
+.max {
+  max-height: 430px;
+}
+
+.maxMovies {
+  max-height: 400px;
+  max-width: 312.5px;
+}
+
+.logo {
+  margin: -70px;
+  padding-left: 60px;
 }

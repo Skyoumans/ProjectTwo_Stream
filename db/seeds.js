@@ -30,7 +30,8 @@ UserModel.remove({}, (err) => {
     console.log(err)
 });
 
-// Create some filler Movies and Users
+
+// Create some filler Movies, Users, and Wishlists
 const goonies = new MovieModel({ title: 'The Goonies', poster: 'https://i.imgur.com/qlHbEvc.jpg', releaseDate: 'June 7, 1985', leadActor: 'Sean Astin', rentalPrice: 2.99, description: `In order to save their home from foreclosure, a group of misfits set out to find a pirate's ancient valuable treasure.`})
 // © http://www.imdb.com/title/tt0089218/
 const theDarkKnight = new MovieModel({ title: 'The Dark Knight', poster: 'https://i.imgur.com/x54TAr1.jpg', releaseDate: 'July 18, 2008', leadActor: 'Christian Bale, Heath Ledger', rentalPrice: 3.99, description: `When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham, the Dark Knight must accept one of the greatest psychological and physical tests of his ability to fight injustice.`})
