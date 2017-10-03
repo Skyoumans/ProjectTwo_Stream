@@ -2,17 +2,20 @@
     <h1>{{user.name}}'s Wish Lists</h1>
     {{#each user.wishlist}}
         <div class="row">
-            <div class="col s12 m5">
+            <div class="col m5">
                 <div class="card">
                     <div class="card-image">
                         <img src="{{this.image}}">
+                    </div>
+                    <div class="card-action">
+                        <a href="/users/{{../user._id}}/wishlists/{{this.id}}/delete">Delete</a>
                     </div>
                 </div>
             </div>
         </div>
     {{/each}}
     <div>
-        <a href="/users/{{user._id}}/wishlists/new" class="waves-effect waves-light btn red darken-3">Add to your wishlist</a>
+        <a href="/users/{{user._id}}/wishlists/new" class="waves-effect waves-light btn red darken-3">Add to this wishlist</a>
     </div><br>
 </div>
             
