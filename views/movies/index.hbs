@@ -1,5 +1,5 @@
 <div>
-    <h2>Movies</h2>
+    <h2 class="title_text center-align">Movies</h2>
     <div class="row">
     {{#each movies}}
         <div class="col s12 m6 l3">
@@ -9,12 +9,12 @@
                     <a href="#" class="btn-floating halfway-fab waves-effect waves-light red darken-3"><i class="material-icons">add</i></a>
                 </div>
                 <div>
-                    <span class="card-title"><strong>{{this.title}}</strong></span>
+                    <span class="main_text card-title"><strong>{{this.title}}</strong></span>
                 </div>
-                <div class="card-content">
+                <div class="main_text card-content">
                     <p>Rental Price: ${{this.rentalPrice}}</p>
                 </div>
-                <div class="card-action">
+                <div class="main_text card-action">
                     <a href="movies/{{this._id}}">View more Info</a>
                 </div>
             </div>

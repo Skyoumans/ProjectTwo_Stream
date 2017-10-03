@@ -38,16 +38,18 @@ const theDarkKnight = new MovieModel({ title: 'The Dark Knight', poster: 'https:
 // © http://www.imdb.com/title/tt0468569/
 const moana = new MovieModel({ title: 'Moana', poster: 'https://i.imgur.com/fCqtdbB.jpg', releaseDate: 'November 23, 2016', leadActor: `Auli'i Cravalho, Dwayne Johnson`, rentalPrice: 5.99, description: `In Ancient Polynesia, when a terrible curse incurred by the Demigod Maui reaches Moana's island, she answers the Ocean's call to seek out the Demigod to set things right.`})
 // © http://www.imdb.com/title/tt3521164/
+const valerian = new MovieModel({title: 'Valerian', poster: 'https://i.imgur.com/5Fu1wXum.jpg', releaseDate: 'July 21, 2017', leadActor: `Dane DeHaan, Cara Delevingne, Clive Owen`, rentalPrice: 5.99, description: `A dark force threatens Alpha, a vast metropolis and home to species from a thousand planets. Special operatives Valerian and Laureline must race to identify the marauding menace and safeguard not just Alpha, but the future of the universe.`})
+// © http://www.imdb.com/title/tt2239822/
 
 const skylar = new UserModel({ name: `Skylar`, username: 'Skyoumans93', password: 'BornThisWay93', favoriteMovie: 'The Dark Knight', bio: `I'm just a junior web developer living in Atlanta, Ga, trying to make a living making web applications.`, status: 'VIP', image: 'https://i.imgur.com/aNt2kxdt.jpg'})
 const jason = new UserModel({ name: `Jason`, username: 'Jason099', password: 'HiWireIT', favoriteMovie: 'Sliding Doors', bio: `I'm just me, an entrepreneur living in Atlanta, Georgia. I love movies, computers, and enjoying the company of friends.`, status: 'VIP', image: 'https://i.imgur.com/ERpczVVt.jpg'})
 const kevin = new UserModel({ name: `Kevin`, username: 'MovieMedic1', password: 'ZeldaIsLife', favoriteMovie: 'The Goonies', bio: `I'm a easy going guy who loves movies and moved to Atlanta from Orlando. I work in a movie theater, so my love of movies is justified.`, status: 'VIP', image: 'https://i.imgur.com/D5MlzoQt.jpg?1'})
 
-const testlist = new WishlistModel({ title: "Spiderman: Homecoming", image: "https://i.imgur.com/loZIxbq.jpg"})
+const spiderman = new WishlistModel({ title: "Spiderman: Homecoming", image: "https://i.imgur.com/loZIxbq.jpg"})
 
 const users = [skylar, jason, kevin]
-const movies = [goonies, theDarkKnight, moana]
-const wishlists =[testlist]
+const movies = [goonies, theDarkKnight, moana, valerian]
+const wishlists =[spiderman]
 
 
 users.forEach((user) => {

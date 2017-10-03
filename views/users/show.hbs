@@ -1,23 +1,23 @@
 <div>  
     <div class="center-align">
-        <h1>{{user.username}}</h1><br>
-        <img class="card" src={{user.image}}>
+        <h1 class="title_text">{{user.username}}</h1><br>
+        <img class="profile" src={{user.image}}>
     </div><br>
-    <div class="center-align">
+    <div class="main_text center-align">
         <a href="/users" class="waves-effect waves-light btn red darken-3">Back to Users</a>
         <a href="/movies" class="waves-effect waves-light btn red darken-3">View Movies</a>
         <a href="/users/{{user._id}}/edit" class="waves-effect waves-light btn red darken-3">Edit {{user.username}}</a>        
     </div><br>
-    <div class="card z-depth-4">
+    <div class="main_text card z-depth-4">
         <h2> Name: </h2><h4>{{user.name}}</h4><br>
     </div> 
-    <div class="card z-depth-4">
+    <div class="main_text card z-depth-4">
         <h2> Favorite movie: </h2><h4>{{user.favoriteMovie}}</h4><br>
     </div>
-    <div class="card z-depth-4">
+    <div class="main_text card z-depth-4">
         <h2> Stream status: </h2><h4>{{user.status}}</h4><br>
     </div>
-    <div class="card z-depth-4">
+    <div class="main_text card z-depth-4">
         <h2> About {{user.name}}: </h2><h4>{{user.bio}}</h4><br>
     </div>
     <div class="center-align">

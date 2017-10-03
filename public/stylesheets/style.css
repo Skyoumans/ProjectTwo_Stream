@@ -20,3 +20,19 @@ a {
   margin: -70px;
   padding-left: 60px;
 }
+
+.title_text {
+  font-family: 'Orbitron', sans-serif;
+  
+}
+
+.main_text {
+  font-family: 'Philosopher', sans-serif;
+  font-size: 18px;
+}
+
+.profile {
+  height: 300px;
+  width: 300px;
+  border-radius: 200px;
+}
