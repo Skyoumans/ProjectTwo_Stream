@@ -7,6 +7,10 @@ a {
   color: #00B7FF;
 }
 
+#homepage {
+  background-image: url("https://i.imgur.com/h2gEntem.jpg");
+}
+
 .max {
   max-height: 430px;
 }
@@ -35,4 +39,14 @@ a {
   height: 300px;
   width: 300px;
   border-radius: 200px;
+}
+
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
 }
