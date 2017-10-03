@@ -45,9 +45,9 @@ router.post('/', (req, res) => {
 router.get('/:wishlistId/delete', (req, res) => {
     const userId = req.params.userId
     const wishlistId = req.params.wishlistId
-    UserModel.findById(wishlistId)
+    UserModel.findById(userId)
     .then((user) => {
-        user.wishlists.id(wishlistId).remove()
+        user.wishlist.id(wishlistId).remove()
         return user.save()
         })
         .then(() => {
