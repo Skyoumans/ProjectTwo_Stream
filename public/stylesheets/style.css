@@ -11,6 +11,15 @@ a {
   background-image: url("https://i.imgur.com/h2gEntem.jpg");
 }
 
+#start {
+  font-size: 40px;
+  
+}
+
+.link {
+  margin: 130px 0px 100px 0px;
+}
+
 .max {
   max-height: 430px;
 }
@@ -22,7 +31,7 @@ a {
 
 .stream_logo {
   margin: -70px;
-  padding-left: 60px;
+  padding-left: 65px;
 }
 
 .title_text {
@@ -44,7 +53,7 @@ a {
 
 body {
   display: flex;
-  min-height: 100vh;
+  min-height: 130vh;
   flex-direction: column;
 }
 main {
