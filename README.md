@@ -23,8 +23,10 @@
 
 ### Links for the app
 
-    * https://trello.com/b/xDPNQsHK/wdi-project-2-stream
-    * https://gomockingbird.com/projects/sbmvxi9/4gXVnC
-    * ![ERD](https://i.imgur.com/Bf629Xm.jpg)
+    * [Trello Board](https://trello.com/b/xDPNQsHK/wdi-project-2-stream)
+    * [Mockup Wireframe](https://gomockingbird.com/projects/sbmvxi9/4gXVnC)
+
+    * [ERD](https://i.imgur.com/Bf629Xm.jpg)
+
     * ERD Disclaimer: Had some minor changes involving relationships between Movies and Wishlists as well as Movies and Users.
 
